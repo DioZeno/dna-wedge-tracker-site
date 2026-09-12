@@ -1,3 +1,4 @@
+# Deploys the generated tracker snapshot from the private source repository.
 name: Deploy public tracker site
 
 on:

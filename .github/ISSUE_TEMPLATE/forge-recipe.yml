@@ -1,0 +1,41 @@
+name: Forge recipe submission
+description: Submit a Demon Wedge forging recipe for verification and inclusion in the shared tracker database.
+title: "Forge recipe: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping build the shared forging database. Please use in-game information when possible. Submitted recipes are reviewed before they become Verified in the tracker.
+  - type: input
+    id: wedge
+    attributes:
+      label: Demon Wedge
+      description: Exact Wedge name and variant, if any.
+      placeholder: Changeling's Morale
+    validations:
+      required: true
+  - type: textarea
+    id: ingredients
+    attributes:
+      label: Ingredients
+      description: List each ingredient and the quantity needed for one forge.
+      placeholder: |
+        Material A × 1
+        Material B × 2
+        Material C × 10
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / source
+      description: Optional screenshot link, video timestamp, or note describing where the recipe was verified.
+      placeholder: In-game Forging Procedures screenshot
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I entered quantities for one forge, not totals for multiple copies.
+          required: true
